@@ -1,11 +1,6 @@
-
-<body>
-    <!-- ... other body content ... -->
-
-    <table id="myDataTable">
-      <table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
+<table id="myDataTable" class="display" style="width:100%">
+    <thead>
+        <tr style="text-align: right;">
       <th></th>
       <th>appointment_id</th>
       <th>patient_id</th>
@@ -7017,4 +7012,9 @@
   </tbody>
 </table>
 
-</body>
+<script>
+$(document).ready(function() {
+    $('#myDataTable').DataTable();
+});
+</script>
+
